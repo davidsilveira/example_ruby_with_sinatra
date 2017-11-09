@@ -1,8 +1,9 @@
 class ApplicationController < Sinatra::Base
   register Sinatra::ActiveRecordExtension
-
-  get '/' do
-    'HELLO WORLD'
-  end
+  set :views, Proc.new { File.join(root, "../views") }
   
+  get '/' do
+    erb :index
+  end
+
 end
