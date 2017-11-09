@@ -42,10 +42,4 @@ $ puma
 
 Access http://localhost:9292/ in your browser
 
-If you want to access console
-
-```console
-$ bin/console
-```
-
 ### Thank you ;)
